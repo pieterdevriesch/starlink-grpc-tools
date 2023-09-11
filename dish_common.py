@@ -48,7 +48,7 @@ def create_arg_parser(output_description, bulk_history=True):
     group.add_argument("-g",
                        "--target",
                        help="host:port of dish to query, default is the standard IP address "
-                       "and port (192.168.100.1:9200)")
+                       "and port (100.64.0.1:9200)")
     group.add_argument("-h", "--help", action="help", help="Be helpful")
     group.add_argument("-N",
                        "--numeric",
