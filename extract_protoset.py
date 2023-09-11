@@ -31,7 +31,7 @@ import grpc
 from yagrc import dump
 from yagrc import reflector
 
-TARGET_DEFAULT = "192.168.100.1:9200"
+TARGET_DEFAULT = "100.64.0.1:9200"
 LOOP_TIME_DEFAULT = 0
 RETRY_DELAY_DEFAULT = 0
 
