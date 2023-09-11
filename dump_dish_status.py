@@ -15,7 +15,7 @@ except ModuleNotFoundError:
 
 # Note that if you remove the 'with' clause here, you need to separately
 # call channel.close() when you're done with the gRPC connection.
-with grpc.insecure_channel("192.168.100.1:9200") as channel:
+with grpc.insecure_channel("100.64.0.1:9200") as channel:
     stub = device_pb2_grpc.DeviceStub(channel)
     response = stub.Handle(device_pb2.Request(get_status={}), timeout=10)
 
