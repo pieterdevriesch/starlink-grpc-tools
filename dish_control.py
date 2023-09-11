@@ -13,9 +13,9 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Starlink user terminal state control")
     parser.add_argument("-e",
                         "--target",
-                        default="192.168.100.1:9200",
+                        default="100.64.0.1:9200",
                         help="host:port of dish to query, default is the standard IP address "
-                        "and port (192.168.100.1:9200)")
+                        "and port (100.64.0.1:9200)")
     subs = parser.add_subparsers(dest="command", required=True)
     subs.add_parser("reboot", help="Reboot the user terminal")
     subs.add_parser("stow", help="Set user terminal to stow position")
