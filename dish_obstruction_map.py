@@ -124,7 +124,7 @@ def parse_args():
     parser.add_argument("-e",
                         "--target",
                         help="host:port of dish to query, default is the standard IP address "
-                        "and port (192.168.100.1:9200)")
+                        "and port (100.64.0.1:9200)")
     parser.add_argument("-t",
                         "--loop-interval",
                         type=float,
