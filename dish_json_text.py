@@ -3,7 +3,7 @@ r"""Output Starlink user terminal data info in text format.
 
 Expects input as from the following command:
 
-    grpcurl -plaintext -d {\"get_history\":{}} 192.168.100.1:9200 SpaceX.API.Device.Device/Handle
+    grpcurl -plaintext -d {\"get_history\":{}} 100.64.0.1:9200 SpaceX.API.Device.Device/Handle
 
 This script examines the most recent samples from the history data and
 prints several different metrics computed from them to stdout. By default,
